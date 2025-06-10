@@ -1,0 +1,24 @@
+type Query {
+    orders: [Order!]!
+    ordersByStatus(status: String!): [Order!]!
+    allStudents: [Student!]!
+    studentById(id: Int!): Student
+}
+
+type Mutation {
+    createOrder(orderId: String!, amount: Float!): Order!
+    startJob: String!
+}
+
+type Order {
+    orderId: String!
+    amount: Float!
+    status: String!
+}
+
+type Student {
+    id: Int!
+    name: String!
+    email: String!
+    year: Int!
+} 

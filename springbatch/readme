@@ -1,0 +1,3 @@
+Access H2 db: http://localhost:8080/h2-console
+user: sa/<empty>
+Set JDBC URL: jdbc:h2:mem:testdb
