@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="275abbc6-e5ee-475a-b3d3-1b48746b4d36" name="Changes" comment="" />
+    <list default="true" id="275abbc6-e5ee-475a-b3d3-1b48746b4d36" name="Changes" comment="[feat] Add new modules for spring-batch and spring-graphql">
+      <change afterPath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/config/OrderBatchConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springbatch/src/main/resources/orders.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions-logs/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions-logs/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_banking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_banking/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_banking/service/BankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_banking/service/BankingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_demo/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions-logs/src/main/java/com/techmaster/java28/logs_demo/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/config/BatchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/config/BatchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbatch/src/main/java/com/techmaster/springbatch/controller/JobController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,23 +28,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2xyHN3DYjlOI7jmMFWYYCEgYQtN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/trungquang/Desktop/2025/techmaster/Java27+28/projects/techmaster-java28"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/trungquang/Desktop/2025/techmaster/Java27+28/projects/techmaster-java28&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,6 +54,28 @@
       <option name="presentableId" value="Default" />
       <updated>1748903349291</updated>
     </task>
+    <task id="LOCAL-00001" summary="[feat] Add the new project for logs and exceptions">
+      <option name="closed" value="true" />
+      <created>1749132691523</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749132691523</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[feat] Add new modules for spring-batch and spring-graphql">
+      <option name="closed" value="true" />
+      <created>1749524645900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749524645900</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[feat] Add the new project for logs and exceptions" />
+    <MESSAGE value="[feat] Add new modules for spring-batch and spring-graphql" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] Add new modules for spring-batch and spring-graphql" />
   </component>
 </project>

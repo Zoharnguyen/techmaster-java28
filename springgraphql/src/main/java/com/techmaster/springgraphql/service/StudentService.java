@@ -5,25 +5,27 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 public class StudentService {
-    private final Map<Integer, Student> students = new ConcurrentHashMap<>();
-
-    public StudentService() {
-        // Initialize with some sample data
-        students.put(1, new Student(1, "John Doe", "john@example.com", 2023));
-        students.put(2, new Student(2, "Jane Smith", "jane@example.com", 2024));
-        students.put(3, new Student(3, "Bob Johnson", "bob@example.com", 2023));
-    }
+    private final List<Student> students = new ArrayList<>();
+    private final AtomicInteger idCounter = new AtomicInteger(1);
 
     public List<Student> getAllStudents() {
-        return new ArrayList<>(students.values());
+        return students;
     }
 
-    public Student getStudentById(Integer id) {
-        return students.get(id);
+    public Student getStudentById(String id) {
+        return students.stream()
+                .filter(student -> student.getId().equals(id))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public Student addStudent(Student student) {
+        student.setId(String.valueOf(idCounter.getAndIncrement()));
+        students.add(student);
+        return student;
     }
 } 

@@ -3,11 +3,14 @@ type Query {
     ordersByStatus(status: String!): [Order!]!
     allStudents: [Student!]!
     studentById(id: Int!): Student
+    students: [Student]
+    student(id: ID!): Student
 }
 
 type Mutation {
     createOrder(orderId: String!, amount: Float!): Order!
     startJob: String!
+    addStudent(input: StudentInput!): Student
 }
 
 type Order {
@@ -17,8 +20,14 @@ type Order {
 }
 
 type Student {
-    id: Int!
+    id: ID!
     name: String!
     email: String!
-    year: Int!
+    age: Int
+}
+
+input StudentInput {
+    name: String!
+    email: String!
+    age: Int
 } 

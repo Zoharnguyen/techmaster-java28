@@ -10,10 +10,12 @@ public class AppController {
     private static final Logger LOGGER = LogManager.getLogger(AppController.class);
 
     public static void main(String[] args) {
-        LOGGER.debug("Debug log message");
+        String accountNumber = "1111";
+        LOGGER.debug("Start process main method {}", accountNumber); // 1000 / 1day
+//        System.out.println("Proccessing sys out");
         divide(4, 2);
         divide(4, 0);
-        LOGGER.fatal("Fatal log message");
+        LOGGER.info("Process success"); // 100 success / day
     }
 
     public static void divide(int number1, int number2) {

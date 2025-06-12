@@ -17,7 +17,7 @@ public class JobController {
     private JobLauncher jobLauncher;
 
     @Autowired
-    private Job importUserJob;
+    private Job importOrderJob;
 
     @GetMapping("/run-batch")
     public String runBatch() throws Exception {
@@ -25,7 +25,8 @@ public class JobController {
                 .addLong("time", System.currentTimeMillis())
                 .toJobParameters();
         
-        jobLauncher.run(importUserJob, jobParameters);
+        jobLauncher.run(importOrderJob, jobParameters);
         return "Batch job has been invoked";
     }
+
 } 

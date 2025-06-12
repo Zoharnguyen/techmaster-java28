@@ -1,0 +1,36 @@
+How to Test the Application:
+Start the application and access GraphiQL at http://localhost:8080/graphiql
+
+query {
+    allStudents {
+    id
+    name
+    email
+    year
+    }
+}
+
+Query a specific student:
+
+ query {
+     studentById(id: 1) {
+       id
+       name
+       email
+       year
+     }
+   }
+
+Add new student:
+mutation {
+  addStudent(input: {
+    name: "John Doe"
+    email: "john.doe@example.com"
+    age: 25
+  }) {
+    id
+    name
+    email
+    age
+  }
+}
